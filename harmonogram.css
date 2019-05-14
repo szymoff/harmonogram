@@ -1,0 +1,110 @@
+.hide { display: none; }
+
+/***Accordion Menu [Start]***/
+.accordion-menu {
+	width: 100%;
+	background: #fafafa;
+}
+
+.accordion-menu li {
+	list-style-type: none;
+}
+
+.accordion-menu li a:first-child{
+	display: block;
+	border: solid 1px #ccc;
+}
+.accordion-menu li a:first-child:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.accordion-menu ul{
+	padding: 0 !important;
+}
+
+.accordion-menu .open {
+	cursor: pointer;
+	display: block;
+	padding: 0px;
+	background-color: #b1b1b1;
+	margin: 0px;
+	padding: 0;
+	background:transparent url('../images/accordionmenu/up.png') no-repeat 0px 6px;
+}
+.accordion-menu .open-selected {
+	background-color: #898989;
+	background:transparent url('../images/accordionmenu/down.png') no-repeat 0px 7px;
+}
+.accordion-menu .content {
+	padding: 5px 10px;
+	background: #fff;
+	border-left: solid 1px #ccc;
+}
+
+.accordion-menu .content p:first-child, .accordion-menu .content h1:first-child, .accordion-menu .content h2:first-child, .accordion-menu .content h3:first-child, .accordion-menu .content h4:first-child, .accordion-menu .content h5:first-child, .accordion-menu .content h6:first-child{
+	margin-top: 0;
+}
+
+.hour{
+	font-weight: 300;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 25%;
+	display: table-cell;
+	float: left;
+	text-align: center;
+	vertical-align: middle
+}
+
+.acc-title{
+	padding-left: 10px;
+	width: 75%;
+	display: block;
+	float: left;
+	border-left: 1px solid #ccc;
+	position: relative;
+	padding-right: 30px;
+}
+
+.subtitle{
+	padding: 2px 10px;
+	text-align: center;
+	font-weight: 500;
+	border-top: solid 1px #ccc;
+	width: 100%;
+	float: left;
+}
+
+.accordion-menu li a:first-child i{
+	position: absolute;
+	top: calc(50% - 5px);
+	right: 10px;
+	margin-right: 0;
+}
+
+.accordion-menu a:first-child {
+	color: #222222;
+}
+.accordion-menu a:first-child:focus {
+	color: inherit !important;
+}
+
+
+@media (max-width: 400px) {
+	.acc-title, .hour {
+	  width: 100%;
+	}
+	.hour {
+		height: auto !important;
+		line-height: 2 !important;
+	  }
+	.acc-title{
+		border-left: 0;
+		border-top: 1px solid #ccc;
+	}
+  }
+  
+
+/***Accordion Menu [End]***/
